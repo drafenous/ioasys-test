@@ -12,7 +12,7 @@ interface RouteParamsInterface {
 export const IdEnterpriseModule: React.FC<RouteComponentProps<RouteParamsInterface>> = ({ match }) => {
     const { id } = match.params;
     const [enterprise, setEnterprise] = useState<Enterprise | undefined>(undefined);
-    const { setEnterpriseName } = useEnterpriseHeader();
+    const { enterpriseName, setEnterpriseName } = useEnterpriseHeader();
 
     useEffect(() => {
         const service = searchService.showEnterprise(id);
@@ -25,7 +25,7 @@ export const IdEnterpriseModule: React.FC<RouteComponentProps<RouteParamsInterfa
     return (
         <div className="container">
             {enterprise && (
-                <EnterpriseDetailsComponent id={id} name={enterprise.enterprise_name} imagePath={enterprise.photo}>
+                <EnterpriseDetailsComponent id={id} name={enterpriseName} imagePath={enterprise.photo}>
                     {enterprise.description}
                 </EnterpriseDetailsComponent>
             )}

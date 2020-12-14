@@ -38,17 +38,21 @@ export const HeaderComponent: React.FC = () => {
     }
 
     useEffect(() => {
+        console.log(enterpriseName);
         if (location.pathname !== EnterprisesRoutes.IdEnterprise.route) {
             setEnterpriseName('');
+            setShowSearchInput(true)
         }
         if (!!enterpriseName) {
             setShowSearchInput(false)
         }
     }, [enterpriseName, location.pathname, setEnterpriseName])
 
+    const showLogo = !showSearchInput && enterpriseName === '';
+
     return (
         <div className="header-wrapper">
-            {!showSearchInput && !enterpriseName === false && (
+            {showLogo && (
                 <>
                     <img src={Assets.logoWhite['1x']} alt="Logo - Ioasys" className="logo-header" onClick={() => push(EnterprisesRoutes.Enterprises.route)} />
                     <img src={Assets.icon.search} alt="Procurar empresas" className="icon-search" onClick={handleSearchButton} />
