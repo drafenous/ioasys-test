@@ -1,0 +1,33 @@
+.btn {
+    font-family: GillSans;
+    font-size: 1.063rem;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--white-two);
+    text-transform: uppercase;
+}
+
+.aqua {
+    height: 3.3rem;
+    margin: 0.625rem 0;
+    border-radius: 3.6px;
+    background-color: var(--greeny-blue);
+}
+
+.aqua:hover {
+    color: var(--white-two);
+}
+
+.aqua:focus {
+    background-color: var(--greeny-blue);
+    box-shadow: none;
+    color: var(--white-two);
+}
+
+.btn:disabled {
+    background-color: #748383;
+}

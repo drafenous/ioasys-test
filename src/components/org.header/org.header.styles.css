@@ -1,0 +1,68 @@
+.header-wrapper {
+    width: 100%;
+    height: 9.438rem;
+    background-image: linear-gradient(180deg, #ea4b76 0%, #bc3c67 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-header {
+    width: 14.64rem;
+    cursor: pointer;
+}
+
+.icon-search {
+    position: absolute;
+    right: 2.5rem;
+    top: 3.063rem;
+    width: 3.75rem;
+    cursor: pointer;
+}
+
+.icon-close {
+    position: absolute;
+    right: 2.5rem;
+    top: 4.038rem;
+    width: 3.75rem;
+    cursor: pointer;
+}
+
+.search-box {
+    width: 100%;
+    position: absolute;
+    top: 3.813rem;
+    padding: 0 2.625rem;
+}
+
+.input-search {
+    border-bottom: 1px solid var(--white-two) !important;
+    padding-left: 3.5rem !important;
+    color: var(--white-two) !important;
+    font-size: 2.125rem !important;
+}
+
+.input-search::placeholder {
+    font-size: 2.125rem !important;
+    color: #991237 !important;
+}
+
+.search-box .inputIcon {
+    top: 0;
+    left: -0.5rem;
+    width: 3.75rem;
+    height: auto;
+}
+
+.input-back {
+    border-bottom: 1px solid var(--white-two) !important;
+    padding-left: 3.5rem !important;
+    color: var(--white-two) !important;
+    font-size: 2.125rem !important;
+}
+
+@media screen and (max-width: 768px) {
+    .icon-search {
+        right: 1rem;
+    }
+}

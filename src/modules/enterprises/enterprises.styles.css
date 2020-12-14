@@ -1,0 +1,20 @@
+.home-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: calc(100vh - 9.438rem);
+    position: relative;
+}
+
+.home-message {
+    font-family: Roboto;
+    font-size: 2rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.22;
+    letter-spacing: -0.45px;
+    text-align: center;
+    color: var(--charcoal-grey);
+}
